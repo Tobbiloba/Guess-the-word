@@ -29,6 +29,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.content .typing-input {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+}
 .inputs input {
   height: 57px;
   width: 56px;
@@ -37,6 +42,7 @@ body {
   font-weight: 500;
   color: rgb(83, 164, 179);
   text-align: center;
+  text-transform: uppercase;
   background: none;
   border-radius: 5px;
   border: 1px solid blue;
@@ -61,4 +67,21 @@ body {
   font-size: 17px;
   padding: 15px 0;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 80%;
+  }
+  .wrapper .h1-text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .inputs input {
+    width: 37px;
+    height: 40px;
+  }
+  .wrapper .p-text {
+    font-size: 17px;
+  }
 }

@@ -9,32 +9,28 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1>Guess the Word</h1>
+      <h1 class="h1-text">Guess the Word</h1>
       <div class="content">
-        <div class="inputs">
-          <input type="text" disabled />
-          <input type="text" disabled />
-          <input type="text" disabled />
-          <input type="text" disabled />
-          <input type="text" disabled />
-          <input type="text" disabled />
-        </div>
+        <input type="text" class="typing-input" maxlength="1" />
+        <div class="inputs"></div>
         <div class="details">
-          <p class="hint">
+          <p class="hint p-text">
             Hint:
-            <span>Hint will be shown here</span>
+            <span></span>
           </p>
-          <p class="guess-left">
+          <p class="guess-left p-text">
             Remaining Guesses:
-            <span>10</span>
+            <span></span>
           </p>
-          <p class="wrong-letter">
+          <p class="wrong-letter p-text">
             Wrong letters:
-            <span>a, b, c, d</span>
+            <span></span>
           </p>
         </div>
         <button class="reset-btn">Reset Game</button>
       </div>
     </div>
+    <script src="./src/js/app.js"></script>
+    <script src="./src/js/word.js"></script>
   </body>
 </html>
